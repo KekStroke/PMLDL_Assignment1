@@ -17,7 +17,17 @@ Download [models folder](https://drive.google.com/drive/folders/1r81s9v-OvfWYgB6
 Download [raw dataset folder](https://drive.google.com/drive/folders/1uQwi-MRTmdok_xjbl3WLJYJ-UnYPGOze?usp=sharing) and pasted it into `/data/raw` folder in the project root
 
 # Prepare Data
-
+To pre-process dataset to further training enter following command for the repository root:
+```bash
+python src/data/make_dataset.py 
+```
 # Train model
-
+To train final model on the preprocessed dataset enter following command for the repository root:
+```bash
+python src/models/train_model.py 
+```
 # Inference
+To use the final trained model on your own sentences enter following command for the repository root:
+```bash
+python src/models/predict_model.py
+```

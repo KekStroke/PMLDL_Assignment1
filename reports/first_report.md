@@ -4,7 +4,7 @@ My first idea was to just copy the initial text and calculate metrics for it.
 ## Deletion of toxic words
 For the second baseline solution I have deleted all toxic words from all text according to [this list of toxic words](https://github.com/s-nlp/detox/blob/main/emnlp2021/style_transfer/condBERT/vocab/toxic_words.txt).
 # Hypothesis 1: Custom encoder-decoder based model
-My initial idea was to check whether some one have implemented encoder-decoder based models to solve any machine translation task. I have build my own toxic and nontoxic vocabulary based on the train dataset and have trained the very basic model. 
+My initial idea was to check whether some one have implemented encoder-decoder based models to solve any machine translation task. I have build my own toxic and nontoxic vocabulary based on the train dataset and have trained the [very basic model](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html). 
 # Hypothesis 2: Pretrained tokenizer
 My second hypothesis was to find our if there is any other already existing vocabulary for the task because previous model was successfully leaning of the training set but very inconsistently on the test set. So I have though than a more general vocabulary will help. [Vocabulary was taken from here](https://huggingface.co/s-nlp/roberta_toxicity_classifier)
 # Hypothesis 3: Pretrained BART model

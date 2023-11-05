@@ -31,3 +31,6 @@ To use the final trained model on your own sentences enter following command for
 ```bash
 python src/models/predict_model.py
 ```
+
+# Miscellaneous
+Other hypotheses were tested in notebooks that can be found in `/notebooks/extra_hypotheses`
